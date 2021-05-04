@@ -4,35 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport">
     <title>Smooth scroll site</title>
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <!--- NAVBAR SECTION -->
 <nav class="navbar">
-  <div class="navbar_container">
-    <a href="#home" id="navbar_logo">Logo</a>
-    <div class="navbar_toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    <div class="navbar_container">
+        <a href="#home" id="navbar_logo">Logo</a>
+        <div class="navbar_toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="#home" class="navbar_links" id="home-page">Home</a>
+            </li>
+            <li class="navbar_item">
+                <a href="#about" class="navbar_links" id="about-page">About</a>
+            </li>
+            <li class="navbar_item">
+                <a href="#services" class="navbar_links" id="services-page">Services</a>
+            </li>
+            <li class="navbar_button">
+                <a href="#sign-up" class="button" id="Signup">Sign up</a>
+            </li>
+        </ul>
     </div>
-    <ul class="navbar_menu">
-      <li class="navbar_item">
-        <a href="#home" class="navbar_links" id="home-page">Home</a>
-      </li>
-      <li class="navbar_item">
-        <a href="#about" class="navbar_links" id="about-page">About</a>
-      </li>
-      <li class="navbar_item">
-        <a href="#services" class="navbar_links" id="services-page">Services</a>
-      </li>
-      <li class="navbar_button">
-        <a href="#sign-up" class="button" id="Signup">Sign up</a>
-      </li>
-    </ul>
-  </div>
 </nav>
+
+<!--Hero section-->
+<div class="hero" id="home">
+    <div class="hero-container">
+        <h1 class="hero_heading">Tekst <span>colors</span></h1>
+        <p class="hero_description">Unlimited possibilities</p>
+        <button class="main_button"><a href="#">Explore</a></button>
+    </div>
+</div>
+
+<!--About section-->
+<main class="main" id="about">
+    <div class="main_container">
+        <div class="main_img_container">
+            <div class="main_image_card"></div>
+        </div>
+        <div class="main_content">
+            <h1>what do we do?</h1>
+            <h2>We help tracking your scores on Strava</h2>
+            <p>Login to find out more about your stats</p>
+            <button class="main_button"><a href="#">Schedule call</a></button>
+        </div>
+    </div>
+</main>
+
+
 
 <script src="app.js"></script>
 </body>
